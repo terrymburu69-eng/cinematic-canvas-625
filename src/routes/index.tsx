@@ -4,7 +4,8 @@ import { ArrowUpRight, ArrowDown, Play, Menu, X, Camera, Film, Radio, Music, Mai
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import savannah from "@/assets/savannah.jpg";
-import reception from "@/assets/pixel-IMG_6781.jpg.asset.json";
+// Media bundled in public/assets (works on any host); the two large trailer files stream
+// from the studio's media storage by absolute URL because they exceed the repo size limit.
 import logo from "@/assets/pixel-logo-lockup.png.asset.json";
 import { portfolio } from "@/lib/pixel-portfolio";
 import trailer from "@/assets/pixel-trailer-web.mp4.asset.json";
