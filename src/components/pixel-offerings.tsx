@@ -1,7 +1,7 @@
 import { ArrowUpRight, Check, Quote, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import weddingQuote from '@/assets/pixel-wedding-quotation.pdf.asset.json';
-import funeralQuote from '@/assets/pixel-funeral-quotation.pdf.asset.json';
+const weddingQuote = '/assets/pixel-wedding-quotation.pdf';
+const funeralQuote = '/assets/pixel-funeral-quotation.pdf';
 import { packages, formatPrice, weddingTerms, funeralTerms } from '@/lib/pixel-packages';
 import { PackageRecommendations } from '@/components/package-recommendations';
 
@@ -11,8 +11,8 @@ export function PixelOfferings({ onBook }: { onBook: (id: string) => void }) {
       <div className="work-top"><div><p className="eyebrow text-muted-foreground mb-3">Pixel Sounds Media quotations</p><h2 className="section-heading">Coverage for your occasion.</h2></div><p className="text-xs text-muted-foreground max-w-72 leading-6">Prices in Kenyan shillings. Select your package or request a personalised quote.</p></div>
       <PackageRecommendations onBook={onBook} />
       {[
-        { id: 'wedding', title: 'Wedding photography & videography', terms: weddingTerms, document: weddingQuote.url },
-        { id: 'funeral', title: 'Funeral livestreaming & photography', terms: funeralTerms, document: funeralQuote.url },
+        { id: 'wedding', title: 'Wedding photography & videography', terms: weddingTerms, document: weddingQuote },
+        { id: 'funeral', title: 'Funeral livestreaming & photography', terms: funeralTerms, document: funeralQuote },
         { id: 'other', title: 'Church, corporate & music', terms: 'Personalised quotations for church services, corporate events and music shoots.', document: null },
       ].map(group => <div key={group.id} className="quotation-group"><div className="quotation-heading"><div><h3>{group.title}</h3><p>{group.terms}</p></div>{group.document && <Button variant="outline" asChild className="text-xs"><a href={group.document} target="_blank" rel="noopener noreferrer"><Download />View quotation PDF</a></Button>}</div><div className="packages-grid">{packages.filter(item => item.group === group.id).map(item => <article key={item.id} className="package-card"><p className="eyebrow text-muted-foreground">{item.category}</p><h3>{item.name}</h3><p className="text-xs text-muted-foreground leading-6">{item.description}</p><div className="package-price">{formatPrice(item.price)}</div><ul>{item.features.map(feature => <li key={feature}><Check className="size-3 text-foreground shrink-0" />{feature}</li>)}</ul><Button variant={item.id === 'wedding-gold' || item.id === 'funeral-premium' ? 'studio' : 'outline'} className="w-full mt-auto h-10 text-xs" onClick={() => onBook(item.id)}>{item.price === null ? 'Request a quote' : 'Request this package'}<ArrowUpRight /></Button></article>)}</div></div>)}
       <p className="text-xs text-muted-foreground leading-6 mt-6">For all enquiries, use 0796 076 364 or 0702 926 220. Some pages of the original PDFs show an older number.</p>
