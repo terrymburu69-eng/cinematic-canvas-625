@@ -25,3 +25,4 @@
 - Use the shared booking validation and submission flow for inline shoot enquiries so privacy and receipt meaning remain consistent with package requests.
 - Serve supplied films through asset pointers with WebM and fast-start MP4 sources so playback works across browsers without bundling large media.
 - Prepare brand marks by isolating the solid emblem with an image edit and lifting thin script lettering from the original separately with a saturation key, then compositing; hand-keying a whole lockup erases fine strokes and leaves glow residue.
+- Serve portfolio photos, team photos, logo and quotation PDFs from `public/assets` (bundled files, plain `/assets/...` paths) so self-hosted builds resolve them; only the trailer WebM/MP4 stay on media storage by absolute URL because they exceed the repository's 10 MB per-file limit and rely on the published site staying live.

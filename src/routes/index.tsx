@@ -4,19 +4,22 @@ import { ArrowUpRight, ArrowDown, Play, Menu, X, Camera, Film, Radio, Music, Mai
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import savannah from "@/assets/savannah.jpg";
-import reception from "@/assets/pixel-IMG_6781.jpg.asset.json";
-import logo from "@/assets/pixel-logo-lockup.png.asset.json";
+// Bundled media (public/assets) works on any host. The two large trailer files stream
+// from the studio's media storage by absolute URL because they exceed the repo size limit.
 import { portfolio } from "@/lib/pixel-portfolio";
-import trailer from "@/assets/pixel-trailer-web.mp4.asset.json";
-import trailerWebm from "@/assets/pixel-trailer.webm.asset.json";
-import trailerPoster from "@/assets/pixel-trailer-poster.jpg.asset.json";
 import { ShootInquiry } from "@/components/shoot-inquiry";
 import { PixelOfferings } from "@/components/pixel-offerings";
 import { BookingDialog } from "@/components/booking-dialog";
 import { WhatsAppFloat, WhatsAppButton } from "@/components/whatsapp-button";
-import brian from "@/assets/pixel-brian.jpg.asset.json";
-import rodgers from "@/assets/pixel-rodgers.jpg.asset.json";
 import { useStudioMotion } from "@/hooks/use-studio-motion";
+
+const reception = { url: "/assets/pixel-IMG_6781.jpg" };
+const logo = { url: "/assets/pixel-logo-lockup.png" };
+const trailer = { url: "https://cinematic-canvas-625.lovable.app/__l5e/assets-v1/eca0df97-01f9-4e86-b544-c446d1d6f62f/pixel-trailer-web.mp4" };
+const trailerWebm = { url: "https://cinematic-canvas-625.lovable.app/__l5e/assets-v1/98c92106-2fd2-4ac1-9172-9abdc7ec71f5/pixel-trailer.webm" };
+const trailerPoster = { url: "/assets/pixel-trailer-poster.jpg" };
+const brian = { url: "/assets/pixel-brian.jpg" };
+const rodgers = { url: "/assets/pixel-rodgers.jpg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
