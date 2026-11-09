@@ -15,8 +15,8 @@ import { useStudioMotion } from "@/hooks/use-studio-motion";
 
 const reception = { url: "/assets/pixel-IMG_6781.jpg" };
 const logo = { url: "/assets/pixel-logo-lockup.png" };
-const trailer = { url: "https://cinematic-canvas-625.lovable.app/__l5e/assets-v1/eca0df97-01f9-4e86-b544-c446d1d6f62f/pixel-trailer-web.mp4" };
-const trailerWebm = { url: "https://cinematic-canvas-625.lovable.app/__l5e/assets-v1/98c92106-2fd2-4ac1-9172-9abdc7ec71f5/pixel-trailer.webm" };
+const trailer = { url: "https://pixelsoundsmedia.lovable.app/__l5e/assets-v1/eca0df97-01f9-4e86-b544-c446d1d6f62f/pixel-trailer-web.mp4" };
+const trailerWebm = { url: "https://pixelsoundsmedia.lovable.app/__l5e/assets-v1/98c92106-2fd2-4ac1-9172-9abdc7ec71f5/pixel-trailer.webm" };
 const trailerPoster = { url: "/assets/pixel-trailer-poster.jpg" };
 const brian = { url: "/assets/pixel-brian.jpg" };
 const rodgers = { url: "/assets/pixel-rodgers.jpg" };
