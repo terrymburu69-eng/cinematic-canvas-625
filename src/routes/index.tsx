@@ -22,6 +22,7 @@ const brian = { url: "/assets/pixel-brian.jpg" };
 const rodgers = { url: "/assets/pixel-rodgers.jpg" };
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({ meta: [
     { title: "Pixel Sounds Media — Weddings, Livestreaming & Music" },
     { name: "description", content: "Pixel Sounds Media, Nairobi. Wedding photography and videography, funeral, church and corporate livestreaming, and music shoots. Call 0796 076 364 or 0702 926 220." },
