@@ -79,6 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "-Q9IxPn4qYveAhpF40ml5gOFCMRoWgAoVhxNsq9hVFE" },
       { title: "Pixel Sounds Media — Photography, Film & Livestreaming" },
       { name: "description", content: "Pixel Sounds Media in Nairobi: wedding photography and videography, funeral, church and corporate livestreaming, and music shoots." },
       { property: "og:title", content: "Pixel Sounds Media — Photography, Film & Livestreaming" },
