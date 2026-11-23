@@ -24,4 +24,4 @@
 - [ ] Send enquiry notifications to pixelsoundsmedia01@gmail.com — blocked until an owned sender domain is configured.
 - [x] Verify recommendations, About Us and animation on desktop and mobile.
 - [x] Connect a Google Search Console account for site verification.
-- [ ] Verify Pixel Sounds Media ownership and submit its sitemap — waiting for the verification tag to appear on the published site.
+- [ ] Verify Pixel Sounds Media ownership on https://pixelsoundsmedia.co.ke/ and submit its same-origin sitemap — waiting for Vercel to serve the new verification tag and sitemap.

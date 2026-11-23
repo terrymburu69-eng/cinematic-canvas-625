@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://pixelsoundsmedia.lovable.app/sitemap.xml
+Sitemap: https://pixelsoundsmedia.co.ke/sitemap.xml
